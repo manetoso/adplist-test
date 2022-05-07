@@ -3,7 +3,6 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { DyteMeeting } from 'dyte-client';
 import { PageAnimation } from './';
-import { joinExistingRoom } from '../utils';
 import { OnMeetContext } from '../context/onMeetContext';
 
 export const MeetingRoom = () => {

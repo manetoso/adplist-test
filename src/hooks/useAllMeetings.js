@@ -18,7 +18,6 @@ export const useAllMeetings = () => {
       setMeetingList([...meetingList, ...data.data.meetings]);
     } catch (error) {}
     reset();
-    setAllMeetingsIsLoading(false);
     loadMeetings();
   };
 
