@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.10.1",
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "axios": "^0.27.2",
+    "dyte-client": "^0.35.2",
+    "framer-motion": "6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "6",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
@@ -15,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "yarn prettier --write .",
+    "g-add": "yarn run format && git add ."
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
   }
 }
