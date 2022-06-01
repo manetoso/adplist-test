@@ -8,7 +8,7 @@ Thi App use, as backend, the API from [dyte](https://docs.dyte.io/docs/home/intr
 
 ## **Preview**
 
-Preview online live web-app on: [ADPList Test](https://adplist-test.vercel.app/) :wink:
+<!-- Preview online live web-app on: [ADPList Test](https://adplist-test.vercel.app/) :wink: -->
 
 ## **Open Source**
 

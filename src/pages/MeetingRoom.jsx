@@ -19,16 +19,16 @@ export const MeetingRoom = () => {
   }, []);
   const onDyteInit = meeting => {
     //meeting joined event
-    meeting.on(meeting.Events.meetingJoined, () => {
-      meeting.controlBar.addButton({
-        icon: <div>😀</div>,
-        label: 'React 😀',
-        position: 'center',
-        onClick: () => {
-          alert('Reaction Click');
-        },
-      });
-    });
+    // meeting.on(meeting.Events.meetingJoined, () => {
+    //   meeting.controlBar.addButton({
+    //     icon: <div>😀</div>,
+    //     label: 'React 😀',
+    //     position: 'center',
+    //     onClick: () => {
+    //       alert('Reaction Click');
+    //     },
+    //   });
+    // });
     //meeting ended event
     meeting.on(meeting.Events.meetingEnded, () => {
       setIsOnMeet(false);

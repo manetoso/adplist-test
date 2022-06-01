@@ -1,6 +1,7 @@
 import { Box, Flex, Image } from '@chakra-ui/react';
 import { MobileNavButton, MobileNavList, NavList } from './components';
 import { useNavbar } from '../hooks/useNavbar';
+import Logo from '../assets/planet-logo.svg';
 
 export const Navbar = () => {
   const { isLg, isOpen, selectedIcon, handleIsOpen, location } = useNavbar();
@@ -29,9 +30,10 @@ export const Navbar = () => {
       >
         <Box>
           <Image
-            src="/img/adplist-logo.svg"
+            src={Logo}
             alt="app logo"
             w={{ base: '4rem', md: '5rem' }}
+            transform="scale(2)"
           />
         </Box>
         {!isLg && (

@@ -31,8 +31,7 @@ export const Home = () => {
                     Wellcome {user.name}
                   </Heading>
                   <Heading color="gray.700" fontSize="lg" textAlign="end">
-                    This is a test created by the Dev. Emmanuel Cortes for
-                    ADPList
+                    This is a video-call app created by the Dev. Emmanuel Cortes
                   </Heading>
                 </>
               )}

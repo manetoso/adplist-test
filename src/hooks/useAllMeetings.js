@@ -12,9 +12,11 @@ export const useAllMeetings = () => {
     e.preventDefault();
     setAllMeetingsIsLoading(true);
     try {
-      const { data } = await meetApi.post('meeting', {
-        title,
-      });
+      // ---- CREATE MEET FEATURE ----
+      // const { data } = await meetApi.post('meeting', {
+      //   title,
+      // });
+      const { data } = await meetApi.get('meetings');
       setMeetingList([...meetingList, ...data.data.meetings]);
     } catch (error) {}
     reset();

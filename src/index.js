@@ -12,9 +12,8 @@ const { REACT_APP_AUTH0_DOMAIN: DOMAIN, REACT_APP_AUTH0_CLIENT_ID: CLIENT_ID } =
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Auth0Provider
-    domain="dev-qtbw9wbp.us.auth0.com"
-    clientId="aZubaRQVxCUiEjbxEFZMg4HTq1PlgonP"
-    // clientId={CLIENT_ID}
+    domain={DOMAIN}
+    clientId={CLIENT_ID}
     redirectUri={window.location.origin}
   >
     <ChakraProvider theme={theme}>

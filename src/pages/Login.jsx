@@ -5,7 +5,7 @@ import { PageAnimation } from './';
 import { Button, Center, Flex, Heading, Text } from '@chakra-ui/react';
 
 export const Login = () => {
-  const { loginWithRedirect, isAuthenticated } = useAuth0();
+  const { isAuthenticated, loginWithPopup } = useAuth0();
   let navigate = useNavigate();
   if (isAuthenticated) {
     return navigate('/');
@@ -22,7 +22,7 @@ export const Login = () => {
               colorScheme="accent"
               paddingX="1.5rem"
               paddingY="1.5rem"
-              onClick={() => loginWithRedirect()}
+              onClick={() => loginWithPopup()}
               variant="solid"
             >
               <Text fontSize="2xl">Log In</Text>

@@ -10,6 +10,7 @@ import {
 import { useAuth0 } from '@auth0/auth0-react';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../../routes';
+import Logo from '../../../assets/planet-logo.svg';
 
 export const MobileNavList = ({ isOpen, handleIsOpen, location }) => {
   const { isAuthenticated, logout } = useAuth0();
@@ -28,10 +29,11 @@ export const MobileNavList = ({ isOpen, handleIsOpen, location }) => {
       >
         <VStack paddingY="5rem">
           <Image
-            src="./img/adplist-logo.svg"
+            src={Logo}
             alt="app logo"
             w="5rem"
             marginBottom="1rem"
+            transform="scale(2)"
           />
           <List spacing="2">
             {routes.map(route => {
