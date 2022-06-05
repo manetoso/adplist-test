@@ -14,9 +14,9 @@ export const Home = () => {
   return (
     <PageAnimation>
       <Center
-        minH="100vh"
+        minH={{ base: 'calc(100vh - 5rem)', md: 'calc(100vh - 7rem)' }}
         paddingX="1rem"
-        marginTop={{ base: '6rem', md: '5rem', lg: '3rem' }}
+        marginTop={{ base: '5rem', md: '7.5rem' }}
       >
         <Flex flexDir="column" gap="1rem">
           {authIsLoading ? (
