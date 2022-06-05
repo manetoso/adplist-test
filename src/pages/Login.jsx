@@ -12,7 +12,11 @@ export const Login = () => {
   }
   return (
     <PageAnimation>
-      <Center minH="100vh" paddingX="2rem">
+      <Center
+        minH={{ base: 'calc(100vh - 5rem)', md: 'calc(100vh - 7rem)' }}
+        paddingX="2rem"
+        marginTop={{ base: '5rem', md: '7.5rem' }}
+      >
         <Flex flexDir="column" alignItems="center" gap="1rem">
           <Heading textAlign="center" color="gray.700">
             You are in the Login Page, Click the button below to Log In
