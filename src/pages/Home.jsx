@@ -16,7 +16,7 @@ export const Home = () => {
       <Center
         minH={{ base: 'calc(100vh - 5rem)', md: 'calc(100vh - 7rem)' }}
         paddingX="1rem"
-        paddingy="2rem"
+        paddingY="2rem"
         marginTop={{ base: '5rem', md: '7.5rem' }}
       >
         <Flex flexDir="column" gap="1rem">
