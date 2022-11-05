@@ -29,7 +29,7 @@ export const Home = () => {
               {isAuthenticated && (
                 <>
                   <Heading textAlign="center" color="gray.700">
-                    Wellcome {user.name}
+                    Welcome {user.name}
                   </Heading>
                   <Heading color="gray.700" fontSize="lg" textAlign="end">
                     This is a video-call app created by the Dev. Emmanuel Cortes
